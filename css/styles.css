@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  align-items: center;
+}
+
+main > img {
+  padding-top: 20px;
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.main-info {
+  text-align: right;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+h1,
+p {
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 50px;
+  background: #8b48bf;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 100px;
+}
+
+.what-different-between-pros {
+  background: #3cddf3;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.what-different-between-pros,
+h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.what-different-between-pros,
+p {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.p-display-desktop {
+  display: none;
+}
+
+.purple-item {
+  border-radius: 30px;
+  background: #8b48bf;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  width: 50px;
+  text-align: center;
+}
+
+.purple-title {
+  background: rgba(139, 72, 191, 0.3);
+  font-weight: 700;
+  border-radius: 50px 0px 0px 50px;
+  min-width: 100%;
+  text-align: center;
+}
+
+.display {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  padding-left: 20px;
+}
+
+.info-benefits {
+  color: #b3b2b7;
+  padding-right: 30px;
+}
+
+.best-of-the-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-of-the-month,
+h2 {
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.best-of-the-month_info {
+  background: #fafafa;
+  padding-bottom: 30px;
+  max-width: 95%;
+}
+
+span {
+  color: #b9b9c1;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.best-of-the-month > img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: -35px;
+}
+
+.display-player {
+  display: none;
+}
+
+.best-of-the-month > button {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  font-size: 10px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.know-the-best {
+  background: #3cddf3;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.know-the-best > h2 {
+  color: #fff;
+  width: 134px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.know-the-best > button {
+  font-size: 10px;
+  width: 100px;
+  padding: 10px;
+  background-color: #232c50;
+  border: none;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+footer {
+  background: #1e1e26;
+  color: #fff;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form > button {
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 60px;
+  border: none;
+}
+
+input {
+  border-radius: 50px;
+  padding-right: 90px;
+  margin-right: 10px;
+  font-size: 10px;
+  border: none;
+}
+
+.footer-items,
+a {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-icons-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copyright > img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-copyright > p {
+  color: #8c8c94;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+  .what-different-between-pros {
+    background: #8b48bf;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .br-display br {
+    display: none;
+  }
+  
+  .p-display {
+    display: none;
+  }
+  
+  .what-different-between-pros > h2{
+  /* padding: 0px 0px 0px 60px; */
+  }
+  
+  .what-different-between-pros > p {
+    margin-top: 30px;
+    white-space: pre;
+  }
+  
+  .p-display-desktop{
+    display: initial;
+  }
+
+  
+  
+  .info-benefits {
+    color: #b3b2b7;
+    padding-right: 30px;
+  }
+  
+  .know-the-best {
+    background: #8b48bf;
+  }
+
+  
+}
+
+
