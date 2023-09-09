@@ -16,20 +16,23 @@ header {
   align-items: center;
 }
 
+header > nav {
+  display: none;
+}
+
+.btn-display {
+  display: none;
+}
+
 main > img {
-  padding-top: 20px;
   max-width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
+  padding: 20px 40px 40px 40px;
 }
 
 .main-info {
   text-align: right;
   font-size: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 h1,
@@ -46,6 +49,11 @@ button {
   border-radius: 50px;
   font-size: 10px;
   width: 100px;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .what-different-between-pros {
@@ -115,10 +123,18 @@ h2 {
   margin-top: 30px;
 }
 
+.best-of-the-month,
+button {
+  transition: all 0.05s;
+}
+
+.best-of-the-month > button:hover {
+  background: rgba(139, 72, 191, 0.3);
+}
+
 .best-of-the-month_info {
   background: #fafafa;
   padding-bottom: 30px;
-  max-width: 95%;
 }
 
 span {
@@ -144,8 +160,7 @@ span {
   border: none;
   padding: 10px;
   font-size: 10px;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  margin: 40px 0px 50px 0px;
 }
 
 .know-the-best {
@@ -168,14 +183,15 @@ span {
   padding: 10px;
   background-color: #232c50;
   border: none;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 40px 0px 40px 0px;
 }
 
 footer {
   background: #1e1e26;
   color: #fff;
   padding: 30px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 form {
@@ -214,12 +230,13 @@ a {
 .footer-icons-media {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 30px 0;
+  width: 100%;
 }
 
 .footer-copyright {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
@@ -228,54 +245,230 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-copyright > p {
+.p-copyright-mobile {
   color: #8c8c94;
   margin-bottom: 20px;
   font-size: 12px;
+  text-align: center;
+}
+
+.p-copyright-desktop {
+  display: none;
+  color: #8c8c94;
+  font-size: 12px;
+  text-align: center;
+  margin: 50px 0px 20px 70px;
+}
+
+input {
+  padding-left: 5px;
 }
 
 @media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header > .fa-solid {
+    display: none;
+  }
+
+  .btn-display {
+    display: initial;
+  }
+
+  header > nav,
+  ul {
+    list-style: none;
+    font-weight: bold;
+  }
+
+  header > nav,
+  ul,
+  li {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  header > nav,
+  ul,
+  li:hover {
+    cursor: pointer;
+  }
+
+  li:last-child {
+    color: #8c8c94;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+
+  .main-info {
+    align-self: center;
+  }
+
+  .main-info > p {
+    padding-left: 90px;
+  }
+
   .what-different-between-pros {
     background: #8b48bf;
     display: flex;
-    padding: 40px;
+    padding: 30px;
     align-items: center;
     justify-content: space-evenly;
   }
-  
-  .br-display br {
-    display: none;
-  }
-  
+
   .p-display {
     display: none;
   }
-  
-  .what-different-between-pros > h2{
-  /* padding: 0px 0px 0px 60px; */
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
   }
-  
+
+  .benefits > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .benefits-item-1,
+  .benefits-item-2 {
+    width: 500px;
+    padding: 15px;
+  }
+
+  .benefits-item-3 {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .purple-title {
+    background: none;
+  }
+
+  .best-of-the-month_info {
+    max-width: 100%;
+  }
+
   .what-different-between-pros > p {
     margin-top: 30px;
     white-space: pre;
   }
-  
-  .p-display-desktop{
+
+  .p-display-desktop {
     display: initial;
+    font-size: 18px;
   }
 
-  
-  
-  .info-benefits {
-    color: #b3b2b7;
-    padding-right: 30px;
+  .best-of-the-month {
+    display: flex;
   }
-  
+  .best-of-the-month h2 {
+    text-align: center;
+  }
+
+  .best-of-the-month_info {
+    width: 300px;
+    display: flex;
+  }
+
+  .display-player {
+    display: block;
+  }
+
+  .players {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .know-the-best {
     background: #8b48bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
   }
 
-  
+  .know-the-best > h2 {
+    margin: 0;
+    width: 250px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .know-the-best > button {
+    background-color: #fff;
+    color: #8b48bf;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+
+  .footer-icons-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .footer-items,
+  a {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    width: 150px;
+  }
+
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  input {
+    height: 40px;
+  }
+
+  form > button {
+    height: 40px;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+  }
+
+  .footer-items {
+    width: 250px;
+  }
+
+  .footer-icons-media {
+    justify-content: flex-start;
+    gap: 13px;
+  }
+
+  .p-copyright-desktop {
+    display: flex;
+    color: #8c8c94;
+    font-size: 12px;
+    text-align: center;
+    justify-content: end;
+    margin: 50px 0px 20px 70px;
+  }
 }
-
-
